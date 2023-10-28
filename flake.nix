@@ -11,7 +11,7 @@
     in
     with pkgs;
     {
-      defaultPackage.x86_64-linux = rustPlatform.buildRustPackage
+      packages.${system}.biome = rustPlatform.buildRustPackage
         rec {
           pname = "biome";
           inherit version;
@@ -66,5 +66,7 @@
             mainProgram = "biome";
           };
         };
+
+      defaultPackage.${system} = self.packages.${system}.biome;
     };
 }
