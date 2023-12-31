@@ -68,7 +68,8 @@
         "useLiteralKeys": "error",
         "useOptionalChain": "error",
         "useSimplifiedLogicExpression": "error",
-        "noExcessiveCognitiveComplexity": "warn"
+        "noExcessiveCognitiveComplexity": "warn",
+        "useArrowFunction": "warn"
       },
       "correctness": {
         "noChildrenProp": "error",
@@ -90,6 +91,7 @@
         "useIsNan": "error",
         "useExhaustiveDependencies": "warn",
         "useHookAtTopLevel": "error",
+        "noEmptyCharacterClassInRegex": "error",
         "useValidForDirection": "error"
       },
       "performance": {
@@ -111,7 +113,9 @@
         "useSelfClosingElements": "error",
         "useShorthandArrayType": "error",
         "useCollapsedElseIf": "warn",
-        "useTemplate": "error"
+        "useTemplate": "error",
+        "useShorthandAssign": "error",
+        "noUselessElse": "warn"
       },
       "suspicious": {
         "noArrayIndexKey": "error",
@@ -148,11 +152,7 @@
       },
       "nursery": {
         "noDuplicateJsonKeys": "error",
-        "noEmptyCharacterClassInRegex": "error",
-        "noUselessElse": "warn",
-        "useArrowFunction": "warn",
-        "useGroupedTypeImport": "error",
-        "useShorthandAssign": "error"
+        "useGroupedTypeImport": "error"
       }
     }
   }

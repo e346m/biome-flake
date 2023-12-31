@@ -7,7 +7,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      version = "1.3.1";
+      version = "1.4.1";
     in
     with pkgs;
     {
@@ -20,10 +20,10 @@
             owner = "biomejs";
             repo = "biome";
             rev = "cli/v${version}";
-            hash = "sha256-8gSFbLHY8W0Q/YFaxGpaMC3+UKwRbzHVnlysxORx8Nw=";
+            hash = "sha256-lzY1Eh1jZixsKi+ObQlhzV4KSV7ZSGPBJtaO9ZiJjEk=";
           };
 
-          cargoHash = "sha256-OQo4YUtRuHqQUAsvW3uUZWN/SMtzMHqvJvuVCdF010g=";
+          cargoHash = "sha256-Hy5UH2VwqboRD+akl1FxBZoXr2+SmVH5Jx0lSAB/P7w=";
 
           nativeBuildInputs = [
             pkg-config
